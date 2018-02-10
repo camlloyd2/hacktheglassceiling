@@ -39,10 +39,18 @@ class App extends Component {
             </div>
           </Tab>
           <Tab label="Chat">
-            <div style={{margin: 60}}>
+            <div
+              style={{
+                margin: 60,
+                display: 'flex',
 
+                flexGrow: 1,
+              }}
+            >
               <ChatBot recognitionEnable={true} steps={steps} />
+              <p> Did you know? blah blah blah </p>
             </div>
+
           </Tab>
         </Tabs>
       </div>
