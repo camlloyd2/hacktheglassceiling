@@ -4,36 +4,64 @@ import './App.css';
 import MuiThemeProvider from 'material-ui/styles/MuiThemeProvider';
 import {Tabs, Tab} from 'material-ui/Tabs';
 import Slider from 'material-ui/Slider';
-
+import ChatBot from 'react-simple-chatbot';
 class App extends Component {
   render () {
     return (
       <div className="App">
         <header className="App-header">
-          <img src={logo} className="App-logo" alt="logo" />
-          <h1 className="App-title">Hack the glass ceiling</h1>
+          <h1 style={{fontSize: 32}}>Hack the glass ceiling</h1>
         </header>
         <Tabs>
-          <Tab label="Item One">
+          <Tab label="Home">
             <div>
-              <h2>About</h2>
+              <h2>About Hacking the Glass Ceiling</h2>
+              <p />
               <p>
-                This is an example tab.
-              </p>
-              <p>
-                You can put any sort of HTML or react component in here. It even keeps the component state!
+                Empowering women through resources
               </p>
 
             </div>
           </Tab>
+          <Tab label="Resources">
+            <div>
+              <h2>Resources</h2>
+              <p />
+              <p>
+                Include links to cool stuff here
+              </p>
+
+            </div>
+          </Tab>
+          <Tab label="Chat">
+            <div>
+              <h2>Chat</h2>
+              <p />
+              <p>
+                chat bot turn up
+              </p>
+              <ChatBot steps={steps} />
+
+            </div>
+          </Tab>
         </Tabs>
-        <p className="App-intro">
-          To get started, edit <code>src/App.js</code> and save to reload.
-        </p>
       </div>
     );
   }
 }
+
+const steps = [
+  {
+    id: '0',
+    message: 'Welcome to react chatbot!',
+    trigger: '1',
+  },
+  {
+    id: '1',
+    message: 'Bye!',
+    end: true,
+  },
+];
 
 const styles = {
   headline: {
