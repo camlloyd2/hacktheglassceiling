@@ -5,16 +5,21 @@ import MuiThemeProvider from 'material-ui/styles/MuiThemeProvider';
 import {Tabs, Tab} from 'material-ui/Tabs';
 import Slider from 'material-ui/Slider';
 import ChatBot from 'react-simple-chatbot';
+import background from './background.png';
 class App extends Component {
   render () {
     return (
       <div className="App">
-        <header className="App-header">
-          <h1 style={{fontSize: 32}}>Hack the glass ceiling</h1>
-        </header>
+        <div style={{backgroundImage: 'url(' + background + ')'}}>
+          <header className="App-header">
+
+            <h1 style={{fontSize: 32}}>Hack the glass ceiling</h1>
+
+          </header>
+        </div>
         <Tabs>
           <Tab label="Home">
-            <div>
+            <div style={{margin: 60}}>
               <h2>About Hacking the Glass Ceiling</h2>
               <p />
               <p>
@@ -24,7 +29,7 @@ class App extends Component {
             </div>
           </Tab>
           <Tab label="Resources">
-            <div>
+            <div style={{margin: 60}}>
               <h2>Resources</h2>
               <p />
               <p>
@@ -34,14 +39,9 @@ class App extends Component {
             </div>
           </Tab>
           <Tab label="Chat">
-            <div>
-              <h2>Chat</h2>
-              <p />
-              <p>
-                chat bot turn up
-              </p>
-              <ChatBot steps={steps} />
+            <div style={{margin: 60}}>
 
+              <ChatBot recognitionEnable={true} steps={steps} />
             </div>
           </Tab>
         </Tabs>
@@ -53,12 +53,22 @@ class App extends Component {
 const steps = [
   {
     id: '0',
-    message: 'Welcome to react chatbot!',
+    message: 'Welcome to Hacking the Glass ceiling!',
     trigger: '1',
   },
   {
     id: '1',
-    message: 'Bye!',
+    message: 'What is your name?',
+    trigger: 2,
+  },
+  {
+    id: '2',
+    user: true,
+    trigger: '3',
+  },
+  {
+    id: '3',
+    message: 'Hi {previousValue}, nice to meet you!',
     end: true,
   },
 ];
