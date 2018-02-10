@@ -6,6 +6,7 @@ import {Tabs, Tab} from 'material-ui/Tabs';
 import Slider from 'material-ui/Slider';
 import ChatBot from 'react-simple-chatbot';
 import background from './background.png';
+import brokenglass from './brokenglass.png'
 class App extends Component {
   render () {
     return (
@@ -13,12 +14,15 @@ class App extends Component {
         <div style={{backgroundImage: 'url(' + background + ')'}}>
           <header className="App-header">
 
-            <h1 style={{fontSize: 32}}>Hack the glass ceiling</h1>
+            <h1 style={{fontSize: 32}}>Hack the Glass Ceiling!</h1>
 
           </header>
         </div>
+
         <Tabs>
           <Tab label="Home">
+          <div style={{backgroundImage: 'url(' + brokenglass + ')'}}>
+               
             <div style={{margin: 60}}>
               <h2>About Hacking the Glass Ceiling</h2>
               <p />
@@ -26,6 +30,7 @@ class App extends Component {
                 Empowering women through resources
               </p>
 
+              </div>
             </div>
           </Tab>
           <Tab label="Resources">
