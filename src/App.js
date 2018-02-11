@@ -2,12 +2,13 @@ import React, {Component} from 'react';
 import logo from './logo.svg';
 import './App.css';
 import MuiThemeProvider from 'material-ui/styles/MuiThemeProvider';
-import {Tabs, Tab} from 'material-ui/Tabs';
+import {Tabs, Tab, Paper} from 'material-ui';
 import Slider from 'material-ui/Slider';
 import ChatBot from 'react-simple-chatbot';
 import background from './background.png';
 import brokenglass from './brokenglass.png';
 import Linkify from 'react-linkify';
+import pearlGirl from './pearlGirl.jpeg';
 import {Card, CardActions, CardHeader, CardMedia, CardTitle, CardText} from 'material-ui/Card';
 import FlatButton from 'material-ui/FlatButton'
 class App extends Component {
