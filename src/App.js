@@ -158,10 +158,8 @@ class App extends Component {
         </div>
 
           </Tab>
-          <Tab label="Resources">
-            <h2 style={{fontsize: 32, alignSelf: 'center', padding: 20}}>
-              Resources to help further your career{' '}
-            </h2>
+          <Tab label="Resources" >
+          <div style={{padding: 8, background: '#daebf2'}}>
             <div
               style={{
                 display: 'flex',
@@ -390,6 +388,7 @@ class App extends Component {
                 </Card>
               </div>
             </div>
+            </div>
           </Tab>
           <Tab label="Chat">
             <div
@@ -401,7 +400,7 @@ class App extends Component {
             >
               <h2 style={{padding: 10}}>
                 {' '}
-                Use this chat bot to help you practice what to say in scenarios associated with gender bias.
+                Use this chat bot to practice what to say in scenarios associated with gender bias.
               </h2>
             </div>
             <div
