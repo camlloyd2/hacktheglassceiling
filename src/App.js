@@ -117,7 +117,7 @@ class App extends Component {
                   </CardText>
 
                 </Card>
-                <Card style={{padding: 20, marginTop: 20}}>
+                <Card style={{padding: 20, marginTop: 20, marginBottom: 20}}>
                   <CardMedia>
                     <img src={womenIntern} alt="" />
                   </CardMedia>
@@ -150,11 +150,6 @@ class App extends Component {
                     <p>
                       <Linkify>
                         https://careers.blizzard.com/en-us/students - Interships, post graduation jobs, and contests hosted by Blizzard Entertainment.
-                      </Linkify>
-                    </p>
-                    <p>
-                      <Linkify>
-                        http://bit.ly/2EizLlB - BAE Systems Summer Internships
                       </Linkify>
                     </p>
 
@@ -209,7 +204,7 @@ class App extends Component {
                   </CardText>
 
                 </Card>
-                <Card style={{padding: 20, marginTop: 20}}>
+                <Card style={{padding: 20, marginTop: 20, marginBottom: 20}}>
                   <CardMedia>
                     <img src={ted} alt="" />
                   </CardMedia>
