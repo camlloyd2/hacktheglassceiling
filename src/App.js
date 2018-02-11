@@ -10,6 +10,8 @@ import brokenglass from './brokenglass.png';
 import Linkify from 'react-linkify';
 import pearlGirl from './pearlGirl.jpeg';
 import rosietech from './rosietech.jpg';
+import womenTech from './womenintech.jpg';
+import miscTech from './miscData.jpg';
 import {ThemeProvider} from 'styled-components';
 import {
   Card,
@@ -62,14 +64,59 @@ class App extends Component {
                 </CardMedia>
                 <CardTitle title="Academics" subtitle="Internships, Scholarships, and more!" />
                 <CardText>
-                  <p>
                     As an upcoming or current undergraduate in heavily male-dominated fields like Computer Science & Technology, finding internships,scholarships,and even the right college for you can be difficult.
                     Below are links to great, women influenced & friendly internships, scholarships specifically for women in the STEM field, and colleges that are accredited and some of the best in the nation!
-                  </p>
                   <h2>Internships</h2>
                     <p>
                       <Linkify>http://rewritingthecode.org - This orginization was created to connect students like you to companies that have the same interests.</Linkify>
                     </p>
+                    <p>
+                      <Linkify>https://girlswhocode.com/ - This website provides links to summer internships, after school coding programs for girls in grades 6-12, and 2 week beginner and intermediate coding bootcamps for girls in college!</Linkify>
+                    </p>
+                    <p>
+                      <Linkify>https://www.women.cs.cmu.edu/Resources/JobsResearch/intern.php - This has a list of internships compiled by Carnegie Melon's school of computer science for students.</Linkify>
+                    </p>
+                    <h2>Colleges</h2>
+                      <p>
+                        <Linkify>This is a placeholder.</Linkify>
+                      </p>
+                    <h2>Scholarships</h2>
+                      <p>
+                        <Linkify>This is a placeholder.</Linkify>
+                      </p>
+                </CardText>
+
+              </Card>
+              <Card>
+                <CardMedia>
+                  <img src={womenTech} alt="" />
+                </CardMedia>
+                <CardTitle title="Professional" subtitle="Post College Opportunities!" />
+                <CardText>
+                    Finding a job straight out of college is difficult, especially in the Computer Science & Technology industries. Here are some tips on how to beef up your LinkedIn profile and companies that are college graduate friendly!
+                  <h2>LinkedIn Tips & Tricks</h2>
+                    <p>
+                      <Linkify>This is a placeholder.</Linkify>
+                    </p>
+                    <h2>College Grad Opportunities</h2>
+                      <p>
+                        <Linkify>This is a placeholder.</Linkify>
+                      </p>
+                </CardText>
+
+              </Card>
+              <Card>
+                <CardMedia>
+                  <img src={miscTech} alt="" />
+                </CardMedia>
+                <CardTitle title="Miscellaneous" subtitle="Various resources to help hack the glass ceiling!" />
+                <CardText>
+                    This is a placeholder.
+                  <h2>Placeholder</h2>
+                    <p>
+                      <Linkify>This is a placeholder.</Linkify>
+                    </p>
+                    <h2>College Grad Opportunities</h2>
                 </CardText>
 
               </Card>
