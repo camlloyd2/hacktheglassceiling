@@ -56,7 +56,9 @@ class App extends Component {
             </div>
           </Tab>
           <Tab label="Resources">
-            <h2 style={{fontsize: 32, alignSelf: 'center'}}>Resources</h2>
+            <h2 style={{fontsize: 32, alignSelf: 'center', padding: 20}}>
+              Resources to help further your career{' '}
+            </h2>
             <div
               style={{
                 display: 'flex',
@@ -89,7 +91,7 @@ class App extends Component {
                     </p>
                     <p>
                       <Linkify>
-                        https://www.women.cs.cmu.edu/Resources/JobsResearch/intern.php - This has a list of internships compiled by Carnegie Melon's school of computer science for students.
+                        http://bit.ly/2BR4RyS - This has a list of internships compiled by Carnegie Melon's school of computer science for students.
                       </Linkify>
                     </p>
                     <h2>Colleges</h2>
@@ -98,7 +100,11 @@ class App extends Component {
                     </p>
                     <h2>Scholarships</h2>
                     <p>
-                      <Linkify>This is a placeholder.</Linkify>
+
+                      <Linkify>
+                        http://www.dodstem.us/stem-programs/scholarships - Department of Defense scholarships provide cash awards to students who have demonstrated ability and aptitude for excelling in STEM fields in disciplines of importance to DoD.
+                      </Linkify>
+
                     </p>
                   </CardText>
 
@@ -117,7 +123,14 @@ class App extends Component {
                     Finding a job straight out of college is difficult, especially in the Computer Science & Technology industries. Here are some tips on how to beef up your LinkedIn profile and companies that are college graduate friendly!
                     <h2>LinkedIn Tips & Tricks</h2>
                     <p>
-                      <Linkify>This is a placeholder.</Linkify>
+                      <Linkify>
+                        http://bit.ly/2krUk06 - 17 steps to a better LinkedIn profile
+                      </Linkify>
+                    </p>
+                    <p>
+                      <Linkify>
+                        https://www.linkedin.com/title/computer-science-student - Great CS student LinkedIn examples
+                      </Linkify>
                     </p>
                     <h2>College Grad Opportunities</h2>
                     <p>
