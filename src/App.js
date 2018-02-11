@@ -114,16 +114,25 @@ class App extends Component {
             </div>
           </Tab>
           <Tab label="Chat">
+          <div
+            style={{
+              display: 'flex',
+              flexDirection: 'column',
+              alignItems: 'center',
+            }}
+            >
+            <h2> Use this chat bot to help you practice what to say in scenarios associated with gender bias.</h2>
+            </div>
             <div
               style={{
                 margin: 60,
                 display: 'flex',
-
                 flexGrow: 1,
+                justifyContent: 'space-around',
               }}
             >
               <div>
-                <h1> Don't Say This: </h1>
+                <h3> Don't Say This When Discussing Your Salary: </h3>
                 <p>
                   I can't afford to live in _______. (Your boss doesn't care)
                   {' '}
@@ -164,7 +173,9 @@ class App extends Component {
                 </ThemeProvider>
               </Paper>
             </div>
-
+            <div> 
+            <h4> Script from Feminist Fight Club by Jessica Bennett </h4> 
+            </div>
           </Tab>
         </Tabs>
       </div>
@@ -187,7 +198,7 @@ const theme = {
 const steps = [
   {
     id: '0',
-    message: 'Welcome to Hacking the Glass ceiling!',
+    message: 'Welcome to Hacking the Glass Ceiling!',
     trigger: '1',
   },
   {
@@ -218,24 +229,59 @@ const steps = [
         label: 'Negotiate a salary',
         trigger: '6',
       },
-      {value: 2, label: 'Discuss a promotion', trigger: '7'},
-      {value: 3, label: 'Confronting workplace discrimination', trigger: '8'},
+      {value: 2, label: 'Discuss a promotion', trigger: '9'},
+      {value: 3, label: 'Confronting workplace discrimination', trigger: '12'},
     ],
   },
   {
     id: '6',
-    message: 'Employer: "I am sorry, we can only offer---',
-    end: true,
+    message: 'Employer: After mulitple rounds of negotitation: "I am sorry, we can only offer---." (type your response)',
+    trigger: 7,
   },
   {
     id: '7',
-    message: 'Employer: "We do not feel that you are ready for that role."',
-    end: true,
+    user: true,
+    trigger: '8',
+  },
+   {
+    id: '8',
+    message: "Nice work! You also could have asked them what they can do to make up the difference (stock, flexibility, benefits, something else) or ask them to reasses in a couple months.",
+    trigger: '15',
   },
   {
-    id: '8',
-    message: 'Employer/Colleague: "Are you sure you can handle that? You do not seem capable."',
-    end: true,
+    id: '9',
+    message: 'Employer: "We do not feel that you are ready for that role." (type your response)',
+    trigger: 10,
+  },
+ {
+    id: '10',
+    user: true,
+    trigger: '11',
+  },
+  {
+    id: '11',
+    message: 'Great response! You also could have said "Help me understand what I can do to be ready."',
+    trigger: '15',
+  },
+  {
+    id: '12',
+    message: 'Employer/Colleague: "Are you sure you can handle that? You do not seem capable." (type your response)',
+    trigger: '13',
+  },
+  {
+    id: '13',
+    user: true,
+    trigger: '14',
+  },
+  {
+    id: '14',
+    message: 'Great idea! You also could have said "I am qualified for this assignment, and I can hold my own."',
+    trigger: '15',
+  },
+  {
+    id: '15',
+    message: 'Select another scenario.',
+    trigger: '5',
   },
 ];
 
