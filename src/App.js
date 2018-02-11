@@ -2,27 +2,30 @@ import React, {Component} from 'react';
 import logo from './logo.svg';
 import './App.css';
 import MuiThemeProvider from 'material-ui/styles/MuiThemeProvider';
-import {Tabs, Tab, Paper} from 'material-ui';
+import {Tabs, Tab} from 'material-ui/Tabs';
 import Slider from 'material-ui/Slider';
 import ChatBot from 'react-simple-chatbot';
 import background from './background.png';
-
-import pearlGirl from './pearlGirl.jpeg';
+import brokenglass from './brokenglass.png';
+import Linkify from 'react-linkify';
+import {Card, CardActions, CardHeader, CardMedia, CardTitle, CardText} from 'material-ui/Card';
+import FlatButton from 'material-ui/FlatButton'
 class App extends Component {
   render () {
     return (
       <div className="App">
-        <div
-          style={{backgroundImage: 'url(' + background + ')', opacity: 0.75}}
-        >
+        <div style={{backgroundImage: 'url(' + background + ')'}}>
           <header className="App-header">
 
-            <h1 style={{fontSize: 50}}>Hack the glass ceiling</h1>
+            <h1 style={{fontSize: 32}}>Hack the Glass Ceiling!</h1>
 
           </header>
         </div>
+
         <Tabs>
           <Tab label="Home">
+          <div style={{backgroundImage: 'url(' + brokenglass + ')'}}>
+               
             <div style={{margin: 60}}>
               <h2>About Hacking the Glass Ceiling</h2>
               <p />
@@ -30,16 +33,58 @@ class App extends Component {
                 Empowering women through resources
               </p>
 
+              </div>
             </div>
           </Tab>
           <Tab label="Resources">
             <div style={{margin: 60}}>
-              <h2>Resources</h2>
-              <p />
-              <p>
-                Include links to cool stuff here
-              </p>
-
+            <h2 style={{fontsize: 32}}>Resources</h2>
+  <Card>
+    <CardHeader
+      title="URL Avatar"
+      subtitle="Subtitle"
+      avatar="images/jsa-128.jpg"
+    />
+    <CardMedia
+      overlay={<CardTitle title="Overlay title" subtitle="Overlay subtitle" />}
+    >
+      <img src="images/nature-600-337.jpg" alt="" />
+    </CardMedia>
+    <CardTitle title="Card title" subtitle="Card subtitle" />
+    <CardText>
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+      Donec mattis pretium massa. Aliquam erat volutpat. Nulla facilisi.
+      Donec vulputate interdum sollicitudin. Nunc lacinia auctor quam sed pellentesque.
+      Aliquam dui mauris, mattis quis lacus id, pellentesque lobortis odio.
+    </CardText>
+    <CardActions>
+      <FlatButton label="Action1" />
+      <FlatButton label="Action2" />
+    </CardActions>
+  </Card>
+  <Card>
+    <CardHeader
+      title="URL Avatar"
+      subtitle="Subtitle"
+      avatar="images/jsa-128.jpg"
+    />
+    <CardMedia
+      overlay={<CardTitle title="Overlay title" subtitle="Overlay subtitle" />}
+    >
+      <img src="images/nature-600-337.jpg" alt="" />
+    </CardMedia>
+    <CardTitle title="Card title" subtitle="Card subtitle" />
+    <CardText>
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+      Donec mattis pretium massa. Aliquam erat volutpat. Nulla facilisi.
+      Donec vulputate interdum sollicitudin. Nunc lacinia auctor quam sed pellentesque.
+      Aliquam dui mauris, mattis quis lacus id, pellentesque lobortis odio.
+    </CardText>
+    <CardActions>
+      <FlatButton label="Action1" />
+      <FlatButton label="Action2" />
+    </CardActions>
+  </Card>
             </div>
           </Tab>
           <Tab label="Chat">
@@ -47,17 +92,11 @@ class App extends Component {
               style={{
                 margin: 60,
                 display: 'flex',
+
                 flexGrow: 1,
-                justifyContent: 'space-evenly',
               }}
             >
-              <Paper>
-                <ChatBot
-                  userAvatar={pearlGirl}
-                  recognitionEnable={true}
-                  steps={steps}
-                />
-              </Paper>
+              <ChatBot recognitionEnable={true} steps={steps} />
               <p> Did you know? blah blah blah </p>
             </div>
 
@@ -87,34 +126,6 @@ const steps = [
   {
     id: '3',
     message: 'Hi {previousValue}, nice to meet you!',
-    trigger: '4',
-  },
-  {
-    id: '4',
-    message: 'What scenario would you like to practice?',
-    trigger: '5',
-  },
-  {
-    id: '5',
-    options: [
-      {value: 1, label: 'Salary Negotation', trigger: '6'},
-      {value: 2, label: 'Workplace discrimination', trigger: '7'},
-      {value: 3, label: 'Asking for promotion', trigger: '8'},
-    ],
-  },
-  {
-    id: '6',
-    message: 'negotiate wohoo',
-    end: true,
-  },
-  {
-    id: '7',
-    message: 'discriminatory business',
-    end: true,
-  },
-  {
-    id: '8',
-    message: 'promotion',
     end: true,
   },
 ];

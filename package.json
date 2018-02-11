@@ -6,6 +6,7 @@
     "material-ui": "^0.20.0",
     "react": "^16.2.0",
     "react-dom": "^16.2.0",
+    "react-linkify": "^0.2.2",
     "react-simple-chatbot": "^0.2.9",
     "react-simpletabs": "^0.7.0",
     "react-tabs": "^2.2.1"
