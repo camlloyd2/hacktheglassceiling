@@ -2,27 +2,27 @@ import React, {Component} from 'react';
 import logo from './logo.svg';
 import './App.css';
 import MuiThemeProvider from 'material-ui/styles/MuiThemeProvider';
-import {Tabs, Tab} from 'material-ui/Tabs';
+import {Tabs, Tab, Paper} from 'material-ui';
 import Slider from 'material-ui/Slider';
 import ChatBot from 'react-simple-chatbot';
 import background from './background.png';
-import brokenglass from './brokenglass.png'
+
+import pearlGirl from './pearlGirl.jpeg';
 class App extends Component {
   render () {
     return (
       <div className="App">
-        <div style={{backgroundImage: 'url(' + background + ')'}}>
+        <div
+          style={{backgroundImage: 'url(' + background + ')', opacity: 0.75}}
+        >
           <header className="App-header">
 
-            <h1 style={{fontSize: 32}}>Hack the Glass Ceiling!</h1>
+            <h1 style={{fontSize: 50}}>Hack the glass ceiling</h1>
 
           </header>
         </div>
-
         <Tabs>
           <Tab label="Home">
-          <div style={{backgroundImage: 'url(' + brokenglass + ')'}}>
-               
             <div style={{margin: 60}}>
               <h2>About Hacking the Glass Ceiling</h2>
               <p />
@@ -30,7 +30,6 @@ class App extends Component {
                 Empowering women through resources
               </p>
 
-              </div>
             </div>
           </Tab>
           <Tab label="Resources">
@@ -48,11 +47,17 @@ class App extends Component {
               style={{
                 margin: 60,
                 display: 'flex',
-
                 flexGrow: 1,
+                justifyContent: 'space-evenly',
               }}
             >
-              <ChatBot recognitionEnable={true} steps={steps} />
+              <Paper>
+                <ChatBot
+                  userAvatar={pearlGirl}
+                  recognitionEnable={true}
+                  steps={steps}
+                />
+              </Paper>
               <p> Did you know? blah blah blah </p>
             </div>
 
@@ -82,6 +87,34 @@ const steps = [
   {
     id: '3',
     message: 'Hi {previousValue}, nice to meet you!',
+    trigger: '4',
+  },
+  {
+    id: '4',
+    message: 'What scenario would you like to practice?',
+    trigger: '5',
+  },
+  {
+    id: '5',
+    options: [
+      {value: 1, label: 'Salary Negotation', trigger: '6'},
+      {value: 2, label: 'Workplace discrimination', trigger: '7'},
+      {value: 3, label: 'Asking for promotion', trigger: '8'},
+    ],
+  },
+  {
+    id: '6',
+    message: 'negotiate wohoo',
+    end: true,
+  },
+  {
+    id: '7',
+    message: 'discriminatory business',
+    end: true,
+  },
+  {
+    id: '8',
+    message: 'promotion',
     end: true,
   },
 ];
