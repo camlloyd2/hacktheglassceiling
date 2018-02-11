@@ -331,7 +331,7 @@ class App extends Component {
                   </CardMedia>
                   <CardTitle
                     title="Important Women in STEM History"
-                    subtitle="Women Who Pathed the Way"
+                    subtitle="Women Who Paved the Way"
                   />
                   <CardText>
                     <h2>
