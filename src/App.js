@@ -56,81 +56,111 @@ class App extends Component {
             </div>
           </Tab>
           <Tab label="Resources">
-            <div style={{margin: 60}}>
-              <h2 style={{fontsize: 32}}>Resources</h2>
-              <Card>
-                <CardMedia>
-                  <img src={rosietech} alt="" />
-                </CardMedia>
-                <CardTitle title="Academics" subtitle="Internships, Scholarships, and more!" />
-                <CardText>
+            <h2 style={{fontsize: 32, alignSelf: 'center'}}>Resources</h2>
+            <div
+              style={{
+                display: 'flex',
+                flexDirection: 'row',
+                justifyContent: 'space-evenly',
+              }}
+            >
+              <div style={{width: '28%'}}>
+                <Card style={{padding: 20}}>
+                  <CardMedia>
+                    <img src={rosietech} alt="" />
+                  </CardMedia>
+                  <CardTitle
+                    title="Academics"
+                    subtitle="Internships, Scholarships, and more!"
+                  />
+                  <CardText>
                     As an upcoming or current undergraduate in heavily male-dominated fields like Computer Science & Technology, finding internships,scholarships,and even the right college for you can be difficult.
                     Below are links to great, women influenced & friendly internships, scholarships specifically for women in the STEM field, and colleges that are accredited and some of the best in the nation!
-                  <h2>Internships</h2>
+                    <h2>Internships</h2>
                     <p>
-                      <Linkify>http://rewritingthecode.org - This orginization was created to connect students like you to companies that have the same interests.</Linkify>
+                      <Linkify>
+                        http://rewritingthecode.org - This orginization was created to connect students like you to companies that have the same interests.
+                      </Linkify>
                     </p>
                     <p>
-                      <Linkify>https://girlswhocode.com/ - This website provides links to summer internships, after school coding programs for girls in grades 6-12, and 2 week beginner and intermediate coding bootcamps for girls in college!</Linkify>
+                      <Linkify>
+                        https://girlswhocode.com/ - This website provides links to summer internships, after school coding programs for girls in grades 6-12, and 2 week beginner and intermediate coding bootcamps for girls in college!
+                      </Linkify>
                     </p>
                     <p>
-                      <Linkify>https://www.women.cs.cmu.edu/Resources/JobsResearch/intern.php - This has a list of internships compiled by Carnegie Melon's school of computer science for students.</Linkify>
+                      <Linkify>
+                        https://www.women.cs.cmu.edu/Resources/JobsResearch/intern.php - This has a list of internships compiled by Carnegie Melon's school of computer science for students.
+                      </Linkify>
                     </p>
                     <h2>Colleges</h2>
-                      <p>
-                        <Linkify>This is a placeholder.</Linkify>
-                      </p>
+                    <p>
+                      <Linkify>This is a placeholder.</Linkify>
+                    </p>
                     <h2>Scholarships</h2>
-                      <p>
-                        <Linkify>This is a placeholder.</Linkify>
-                      </p>
-                </CardText>
+                    <p>
+                      <Linkify>This is a placeholder.</Linkify>
+                    </p>
+                  </CardText>
 
-              </Card>
-              <Card>
-                <CardMedia>
-                  <img src={womenTech} alt="" />
-                </CardMedia>
-                <CardTitle title="Professional" subtitle="Post College Opportunities!" />
-                <CardText>
+                </Card>
+              </div>
+              <div style={{width: '28%'}}>
+                <Card style={{padding: 20}}>
+                  <CardMedia>
+                    <img src={womenTech} alt="" />
+                  </CardMedia>
+                  <CardTitle
+                    title="Professional"
+                    subtitle="Post College Opportunities!"
+                  />
+                  <CardText>
                     Finding a job straight out of college is difficult, especially in the Computer Science & Technology industries. Here are some tips on how to beef up your LinkedIn profile and companies that are college graduate friendly!
-                  <h2>LinkedIn Tips & Tricks</h2>
+                    <h2>LinkedIn Tips & Tricks</h2>
                     <p>
                       <Linkify>This is a placeholder.</Linkify>
                     </p>
                     <h2>College Grad Opportunities</h2>
-                      <p>
-                        <Linkify>This is a placeholder.</Linkify>
-                      </p>
-                </CardText>
+                    <p>
+                      <Linkify>This is a placeholder.</Linkify>
+                    </p>
+                  </CardText>
 
-              </Card>
-              <Card>
-                <CardMedia>
-                  <img src={miscTech} alt="" />
-                </CardMedia>
-                <CardTitle title="Miscellaneous" subtitle="Various resources to help hack the glass ceiling!" />
-                <CardText>
+                </Card>
+              </div>
+              <div style={{width: '28%'}}>
+                <Card style={{padding: 20}}>
+                  <CardMedia>
+                    <img src={miscTech} alt="" />
+                  </CardMedia>
+                  <CardTitle
+                    title="Miscellaneous"
+                    subtitle="Various resources to help hack the glass ceiling!"
+                  />
+                  <CardText>
                     This is a placeholder.
-                  <h2>Placeholder</h2>
+                    <h2>Placeholder</h2>
                     <p>
                       <Linkify>This is a placeholder.</Linkify>
                     </p>
                     <h2>College Grad Opportunities</h2>
-                </CardText>
+                  </CardText>
 
-              </Card>
+                </Card>
+              </div>
             </div>
           </Tab>
           <Tab label="Chat">
-          <div
-            style={{
-              display: 'flex',
-              flexDirection: 'column',
-              alignItems: 'center',
-            }}
+            <div
+              style={{
+                display: 'flex',
+                flexDirection: 'column',
+                alignItems: 'center',
+              }}
             >
-            <h2> Use this chat bot to help you practice what to say in scenarios associated with gender bias.</h2>
+              <h2>
+                {' '}
+                Use this chat bot to help you practice what to say in scenarios associated with gender bias.
+              </h2>
             </div>
             <div
               style={{
@@ -182,8 +212,8 @@ class App extends Component {
                 </ThemeProvider>
               </Paper>
             </div>
-            <div> 
-            <h4> Script from Feminist Fight Club by Jessica Bennett </h4> 
+            <div>
+              <h4> Script from Feminist Fight Club by Jessica Bennett </h4>
             </div>
           </Tab>
         </Tabs>
@@ -252,9 +282,9 @@ const steps = [
     user: true,
     trigger: '8',
   },
-   {
+  {
     id: '8',
-    message: "Nice work! You also could have asked them what they can do to make up the difference (stock, flexibility, benefits, something else) or ask them to reasses in a couple months.",
+    message: 'Nice work! You also could have asked them what they can do to make up the difference (stock, flexibility, benefits, something else) or ask them to reasses in a couple months.',
     trigger: '15',
   },
   {
@@ -262,7 +292,7 @@ const steps = [
     message: 'Employer: "We do not feel that you are ready for that role." (type your response)',
     trigger: 10,
   },
- {
+  {
     id: '10',
     user: true,
     trigger: '11',
