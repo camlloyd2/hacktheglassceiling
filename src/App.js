@@ -17,7 +17,16 @@ class App extends Component {
         >
           <header className="App-header">
 
-            <h1 style={{fontSize: 50}}>Hack the glass ceiling</h1>
+            <h1
+              style={{
+                fontSize: 50,
+                fontFamily: 'didot',
+                fontStyle: 'bold',
+                textShadow: '3px 3px 3px  #04080f',
+              }}
+            >
+              HACKING THE GLASS CEILING
+            </h1>
 
           </header>
         </div>
