@@ -15,6 +15,15 @@ import info4 from './info4.png';
 import Linkify from 'react-linkify';
 import pearlGirl from './pearlGirl.jpeg';
 import rosietech from './rosietech.jpg';
+import womenTech from './womenintech.jpg';
+import womenIntern from './womenIntern.jpg';
+import miscTech from './miscData.jpg';
+import ted from './ted.jpg';
+
+import book from './bookCard.jpeg';
+
+import grace from './grace.jpg';
+
 import {ThemeProvider} from 'styled-components';
 import {
   Card,
@@ -150,36 +159,250 @@ class App extends Component {
 
           </Tab>
           <Tab label="Resources">
-            <div style={{margin: 60}}>
-              <h2 style={{fontsize: 32}}>Resources</h2>
-              <Card>
-                <CardMedia>
-                  <img src={rosietech} alt="" />
-                </CardMedia>
-                <CardTitle title="Academics" subtitle="Internships, Scholarships, and more!" />
-                <CardText>
-                  <p>
-                    As an upcoming or current undergraduate in heavily male-dominated fields like Computer Science & Technology, finding internships,scholarships,and even the right college for you can be difficult.
-                    Below are links to great, women influenced & friendly internships, scholarships specifically for women in the STEM field, and colleges that are accredited and some of the best in the nation!
-                  </p>
-                  <h2>Internships</h2>
+            <h2 style={{fontsize: 32, alignSelf: 'center', padding: 20}}>
+              Resources to help further your career{' '}
+            </h2>
+            <div
+              style={{
+                display: 'flex',
+                flexDirection: 'row',
+                justifyContent: 'space-evenly',
+              }}
+            >
+              <div style={{width: '28%'}}>
+                <Card style={{padding: 20}}>
+                  <CardMedia>
+                    <img src={rosietech} alt="" />
+                  </CardMedia>
+                  <CardTitle
+                    title="Academics"
+                    subtitle="Internships, Scholarships, and more!"
+                  />
+                  <CardText>
+                    As an upcoming or current undergraduate in heavily male-dominated fields like Computer Science & Technology, finding scholarships and even the right college for you can be difficult.
+                    Below are links to scholarships specifically for women in the STEM field and college repositories!
+                    <h2>Colleges</h2>
                     <p>
-                      <Linkify>http://rewritingthecode.org - This orginization was created to connect students like you to companies that have the same interests.</Linkify>
+                      <Linkify>
+                        https://www.computerscienceonline.org - This is a general database of colleges with Computer Science programs.
+                      </Linkify>
                     </p>
-                </CardText>
+                    <p>
+                      <Linkify>
+                        https://www.computerscience.org/degrees/bachelors/ - Another general database that also has available scholarships.
+                      </Linkify>
+                    </p>
+                    <h2>Scholarships</h2>
+                    <p>
+                      <Linkify>
+                        http://www.dodstem.us/stem-programs/scholarships - Department of Defense scholarships provide cash awards to students who have demonstrated ability and aptitude for excelling in STEM fields in disciplines of importance to DoD.
+                      </Linkify>
+                    </p>
+                    <p>
+                      <Linkify>
+                        http://societyofwomenengineers.swe.org/scholarships - Society of Women Scholarships
+                      </Linkify>
+                    </p>
+                    <p>
+                      <Linkify>
+                        https://www.womentechmakers.com/scholars - Anita Borg Scholars Program
+                        {' '}
+                      </Linkify>
+                    </p>
 
-              </Card>
+                  </CardText>
+
+                </Card>
+                <Card style={{padding: 20, marginTop: 20, marginBottom: 20}}>
+                  <CardMedia>
+                    <img src={womenIntern} alt="" />
+                  </CardMedia>
+                  <CardTitle
+                    title="Internships"
+                    subtitle="Experience Gathering Opportunities"
+                  />
+                  <CardText>
+                    Here are some companies that offer great experience while getting your degree!
+                    <p>
+                      <Linkify>
+                        https://girlswhocode.com/ - This website provides links to summer internships, after school coding programs for girls in grades 6-12, and 2 week beginner and intermediate coding bootcamps for girls in college!
+                      </Linkify>
+                    </p>
+                    <p>
+                      <Linkify>
+                        http://bit.ly/2BR4RyS - This has a list of internships compiled by Carnegie Melon's school of computer science for students.
+                      </Linkify>
+                    </p>
+                    <p>
+                      <Linkify>
+                        https://www.redhat.com/en/jobs/categories/internships - Internships with RedHat.
+                      </Linkify>
+                    </p>
+                    <p>
+                      <Linkify>
+                        https://careers.jpmorgan.com/careers/US/en/programs - Various college student programs with JP Morgan Chase & Co.
+                      </Linkify>
+                    </p>
+                    <p>
+                      <Linkify>
+                        https://careers.blizzard.com/en-us/students - Interships, post graduation jobs, and contests hosted by Blizzard Entertainment.
+                      </Linkify>
+                    </p>
+
+                  </CardText>
+
+                </Card>
+
+              </div>
+              <div style={{width: '28%'}}>
+                <Card style={{padding: 20}}>
+                  <CardMedia>
+                    <img src={womenTech} alt="" />
+                  </CardMedia>
+                  <CardTitle
+                    title="Professional"
+                    subtitle="Post College Opportunities!"
+                  />
+                  <CardText>
+                    Finding a job straight out of college is difficult, especially in the Computer Science & Technology industries. Here are some tips on how to beef up your LinkedIn profile and companies that are college graduate friendly!
+                    <h2>LinkedIn Tips & Tricks</h2>
+                    <p>
+                      <Linkify>
+                        http://bit.ly/2krUk06 - 17 steps to a better LinkedIn profile
+                      </Linkify>
+                    </p>
+                    <p>
+                      <Linkify>
+                        https://www.linkedin.com/title/computer-science-student - Great CS student LinkedIn examples
+                      </Linkify>
+                    </p>
+                    <h2>College Grad Opportunities</h2>
+                    <p>
+                      <Linkify>
+                        https://careers.jpmorgan.com/careers/US/en/programs?type=Full-Time - JP Morgan Chase & Co Post Graduate Opportunities
+                      </Linkify>
+                    </p>
+                    <p>
+                      <Linkify>
+                        https://careers.blizzard.com/en-us/openings/all/all/all/new-grad-roles/1 - Blizzard Entertainment Post Graduate Opportunities
+                      </Linkify>
+                    </p>
+                    <p>
+                      <Linkify>
+                        https://www.redhat.com/en/jobs/categories/technology - RedHat Post Graduate Opportunities
+                      </Linkify>
+                    </p>
+                    <p>
+                      <Linkify>
+                        http://rewritingthecode.org - This organization was created to connect students like you to companies that have the same interests.
+                      </Linkify>
+                    </p>
+                  </CardText>
+
+                </Card>
+                <Card style={{padding: 20, marginTop: 20, marginBottom: 20}}>
+                  <CardMedia>
+                    <img src={ted} alt="" />
+                  </CardMedia>
+                  <CardTitle
+                    title="TED Talks"
+                    subtitle="Great talks by figures in tech"
+                  />
+                  <CardText>
+                    {' '}
+                    Check out these inspirational Ted Talks on a variety of topics and conversations surrounding technology.
+                    <p>
+                      <Linkify>
+                        http://bit.ly/2i1Wrec- Economist Andrew McAfee suggests that, yes, probably, droids will take our jobs -- or at least the kinds of jobs we know now. In this far-seeing talk, he thinks through what future jobs might look like, and how to educate coming generations to hold them.
+                      </Linkify>
+                    </p>
+                    <p>
+                      <Linkify>
+                        http://bit.ly/XXGyrc - In this talk about the future of work, economist David Autor addresses the question of why there are still so many jobs and comes up with a surprising, hopeful answer.
+                      </Linkify>
+                    </p>
+                  </CardText>
+                </Card>
+              </div>
+              <div style={{width: '28%'}}>
+                <Card style={{padding: 20}}>
+                  <CardMedia>
+                    <img src={grace} alt="" />
+                  </CardMedia>
+                  <CardTitle
+                    title="Important Women in STEM History"
+                    subtitle="Women Who Pathed the Way"
+                  />
+                  <CardText>
+                    <h2>
+                      Ada Lovelace - 1815-1852; The Prophet of the Computer Age
+                    </h2>
+                    <p>
+                      <Linkify>
+                        Ada is considered to be the first computer programmer. She translated and extended onto article on Babbage's analytical engine that was published in 1843, however its significance was not recognized until after her death.
+                        {' '}
+                      </Linkify>
+                    </p>
+                    <h2>
+                      Rear Admiral Grace Hopper - 1906-1992 (Pictured Above)
+                    </h2>
+                    <p>
+                      <Linkify>
+                        Grace created the first compiler for computer languages, which renders worded instructions into code that can be read by computers. She joined the US Navy in 1943, joined the reserves after WWII, retired in 1966, and then returned in 1967 and served another 19 years before officially retiring in 1986. Grace was awarded the National Medal of Technology in 1991—becoming the first female individual recipient of the honor.
+                      </Linkify>
+                    </p>
+                    <h2>
+                      Katherine Johnson, Dorothy Vaughan, and Mary Jackson
+                    </h2>
+                    <p>
+                      <Linkify>
+                        Katherine, Dorothy, and Mary were all involved in John Glenn's trip around the globe in 1962. Katherine calculated the trajectories needed for a save takeoff and splashdown for the trip. Dorothy became the National Advisory Committee for Aeronautics's first black computing supervisor as well as their first expert FORTAN programmer. Mary was original assisting Kazimierz Czarnecki in aeronautic research engineering before petitioning & winning the right to take engineering courses at Hampton High School, which was at the time segregated. She then became NASA's first female African-American engineer.
+                      </Linkify>
+                    </p>
+                  </CardText>
+
+                </Card>
+                <Card style={{padding: 20, marginTop: 20}}>
+                  <CardMedia>
+                    <img src={book} alt="" />
+                  </CardMedia>
+                  <CardTitle
+                    title="Top books to read"
+                    subtitle="Engage with iconic books about technology in our world today."
+                  />
+                  <CardText>
+                    <p>
+                      <Linkify>
+                        http://amzn.to/2lInJ78 - Feminist Fight Club: An Office Survival Manual for a Sexist Workplace by Jessica Bennett
+                      </Linkify>
+                    </p>
+                    <p>
+                      <Linkify>
+                        http://amzn.to/2sqOYJM - Lean In: Women, Work, and the Will to Lead by Sheryl Sandberg
+                      </Linkify>
+                    </p>
+                    <p>
+                      <Linkify>
+                        http://amzn.to/2BRswz5 - The Design of Everyday Things by Don Norman
+                      </Linkify>
+                    </p>
+                  </CardText>
+                </Card>
+              </div>
             </div>
           </Tab>
           <Tab label="Chat">
-          <div
-            style={{
-              display: 'flex',
-              flexDirection: 'column',
-              alignItems: 'center',
-            }}
+            <div
+              style={{
+                display: 'flex',
+                flexDirection: 'column',
+                alignItems: 'center',
+              }}
             >
-            <h2> Use this chat bot to help you practice what to say in scenarios associated with gender bias.</h2>
+              <h2 style={{padding: 10}}>
+                {' '}
+                Use this chat bot to help you practice what to say in scenarios associated with gender bias.
+              </h2>
             </div>
             <div
               style={{
@@ -190,36 +413,37 @@ class App extends Component {
               }}
             >
               <div>
-                <h3> Don't Say This When Discussing Your Salary: </h3>
-                <p>
-                  I can't afford to live in _______. (Your boss doesn't care)
-                  {' '}
-                </p>
-                <p>
-                  {' '}I have student loans. (Ditto)
-                </p>
-                <p>
-                  {' '}I'm getting married. (Nope)
-                </p>
-                <p>
-                  {' '}I'm trying to get pregnant. (NOOOOO!)
-                </p>
-                <p>
-                  {' '}I've been working overtime. (We all work hard.)
-                </p>
-                <p>
-                  {' '}
-                  This is what I want and I'll take nothing less. (Negotiation is about compromise.)
-                </p>
-                <p>
-                  {' '}
-                  I need _____. (OK, but do you really need it? Try I'd like or I propose)
-                </p>
-                <p>
-                  {' '}
-                  I'm sorry, I just want _______. (Do not-- repeat: do not!-- apologize for talking about money)
-                </p>
-
+                <Paper style={{padding: 20}}>
+                  <h3> Don't Say This When Discussing Your Salary: </h3>
+                  <p>
+                    I can't afford to live in _______. (Your boss doesn't care)
+                    {' '}
+                  </p>
+                  <p>
+                    {' '}I have student loans. (Ditto)
+                  </p>
+                  <p>
+                    {' '}I'm getting married. (Nope)
+                  </p>
+                  <p>
+                    {' '}I'm trying to get pregnant. (NOOOOO!)
+                  </p>
+                  <p>
+                    {' '}I've been working overtime. (We all work hard.)
+                  </p>
+                  <p>
+                    {' '}
+                    This is what I want and I'll take nothing less. (Negotiation is about compromise.)
+                  </p>
+                  <p>
+                    {' '}
+                    I need _____. (OK, but do you really need it? Try I'd like or I propose)
+                  </p>
+                  <p>
+                    {' '}
+                    I'm sorry, I just want _______. (Do not-- repeat: do not!-- apologize for talking about money)
+                  </p>
+                </Paper>
               </div>
               <Paper>
                 <ThemeProvider theme={theme}>
@@ -231,8 +455,8 @@ class App extends Component {
                 </ThemeProvider>
               </Paper>
             </div>
-            <div> 
-            <h4> Script from Feminist Fight Club by Jessica Bennett </h4> 
+            <div>
+              <h4> Script from Feminist Fight Club by Jessica Bennett </h4>
             </div>
           </Tab>
         </Tabs>
@@ -301,9 +525,9 @@ const steps = [
     user: true,
     trigger: '8',
   },
-   {
+  {
     id: '8',
-    message: "Nice work! You also could have asked them what they can do to make up the difference (stock, flexibility, benefits, something else) or ask them to reasses in a couple months.",
+    message: 'Nice work! You also could have asked them what they can do to make up the difference (stock, flexibility, benefits, something else) or ask them to reasses in a couple months.',
     trigger: '15',
   },
   {
@@ -311,7 +535,7 @@ const steps = [
     message: 'Employer: "We do not feel that you are ready for that role." (type your response)',
     trigger: 10,
   },
- {
+  {
     id: '10',
     user: true,
     trigger: '11',
