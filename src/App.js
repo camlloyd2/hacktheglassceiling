@@ -55,7 +55,7 @@ class App extends Component {
 
         <Tabs>
           <Tab label="Home">
-          <div style = {{display: 'flex', flexDirection: 'row', justifyContent: 'space-evenly', flexWrap: 'wrap', background: '#daebf2'}}>
+          <div style = {{display: 'flex', flexDirection: 'row', justifyContent: 'space-evenly', flexWrap: 'wrap', background: '#daebf2', fontSize: 24}}>
             
             <div style = {{width: '90%', alignSelf: 'center', flexDirection: 'column', padding: 8}}>
             <Paper style = {{paperStyle, display: 'flex',
@@ -443,9 +443,11 @@ class App extends Component {
                     {' '}
                     I'm sorry, I just want _______. (Do not-- repeat: do not!-- apologize for talking about money)
                   </p>
+                  <div style = {{ fontStyle: 'italic', fontSize: 12}} >
                   <p>
                     <Linkify>Script from Feminist Fight Club by Jessica Bennett</Linkify>
                   </p>
+                  </div>
                 </Paper>
               </div>
               <Paper>
