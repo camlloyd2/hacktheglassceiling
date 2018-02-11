@@ -50,7 +50,6 @@ class App extends Component {
                 justifyContent: 'space-evenly',
               }}
             >
-              <ChatBot recognitionEnable={true} steps={steps} />
              
                 <div>
                   <h1> Don't Say This: </h1>
@@ -79,7 +78,6 @@ class App extends Component {
                   steps={steps}
                 />
               </Paper>
-              <p> Did you know? blah blah blah </p>
             </div>
 
           </Tab>
