@@ -141,7 +141,7 @@ class App extends Component {
                 Don’t be the default option for “office housework”
                 </p>
                 <p>
-                  Be vocal about other women’s accomplishments. REmind others of their contributions and strengths. 
+                  Be vocal about other women’s accomplishments. Remind others of their contributions and strengths. 
                 </p>
                 <p>
                   Don’t let people interrupt you.
@@ -391,6 +391,7 @@ class App extends Component {
             </div>
           </Tab>
           <Tab label="Chat">
+          <div style={{background: '#daebf2'}}>
             <div
               style={{
                 display: 'flex',
@@ -405,7 +406,7 @@ class App extends Component {
             </div>
             <div
               style={{
-                margin: 60,
+                
                 display: 'flex',
                 flexGrow: 1,
                 justifyContent: 'space-around',
@@ -442,6 +443,9 @@ class App extends Component {
                     {' '}
                     I'm sorry, I just want _______. (Do not-- repeat: do not!-- apologize for talking about money)
                   </p>
+                  <p>
+                    <Linkify>Script from Feminist Fight Club by Jessica Bennett</Linkify>
+                  </p>
                 </Paper>
               </div>
               <Paper>
@@ -454,12 +458,10 @@ class App extends Component {
                 </ThemeProvider>
               </Paper>
             </div>
-            <div>
-              <h4> Script from Feminist Fight Club by Jessica Bennett </h4>
             </div>
           </Tab>
         </Tabs>
-      </div>
+        </div>
     );
   }
 }
