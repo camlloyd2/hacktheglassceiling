@@ -9,6 +9,7 @@ import background from './background.png';
 import brokenglass from './brokenglass.png';
 import Linkify from 'react-linkify';
 import pearlGirl from './pearlGirl.jpeg';
+import rosietech from './rosietech.jpg';
 import {ThemeProvider} from 'styled-components';
 import {
   Card,
@@ -56,60 +57,21 @@ class App extends Component {
             <div style={{margin: 60}}>
               <h2 style={{fontsize: 32}}>Resources</h2>
               <Card>
-                <CardHeader
-                  title="URL Avatar"
-                  subtitle="Subtitle"
-                  avatar="images/jsa-128.jpg"
-                />
-                <CardMedia
-                  overlay={
-                    <CardTitle
-                      title="Overlay title"
-                      subtitle="Overlay subtitle"
-                    />
-                  }
-                >
-                  <img src="images/nature-600-337.jpg" alt="" />
+                <CardMedia>
+                  <img src={rosietech} alt="" />
                 </CardMedia>
-                <CardTitle title="Card title" subtitle="Card subtitle" />
+                <CardTitle title="Academics" subtitle="Internships, Scholarships, and more!" />
                 <CardText>
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                  Donec mattis pretium massa. Aliquam erat volutpat. Nulla facilisi.
-                  Donec vulputate interdum sollicitudin. Nunc lacinia auctor quam sed pellentesque.
-                  Aliquam dui mauris, mattis quis lacus id, pellentesque lobortis odio.
+                  <p>
+                    As an upcoming or current undergraduate in heavily male-dominated fields like Computer Science & Technology, finding internships,scholarships,and even the right college for you can be difficult.
+                    Below are links to great, women influenced & friendly internships, scholarships specifically for women in the STEM field, and colleges that are accredited and some of the best in the nation!
+                  </p>
+                  <h2>Internships</h2>
+                    <p>
+                      <Linkify>http://rewritingthecode.org - This orginization was created to connect students like you to companies that have the same interests.</Linkify>
+                    </p>
                 </CardText>
-                <CardActions>
-                  <FlatButton label="Action1" />
-                  <FlatButton label="Action2" />
-                </CardActions>
-              </Card>
-              <Card>
-                <CardHeader
-                  title="URL Avatar"
-                  subtitle="Subtitle"
-                  avatar="images/jsa-128.jpg"
-                />
-                <CardMedia
-                  overlay={
-                    <CardTitle
-                      title="Overlay title"
-                      subtitle="Overlay subtitle"
-                    />
-                  }
-                >
-                  <img src="images/nature-600-337.jpg" alt="" />
-                </CardMedia>
-                <CardTitle title="Card title" subtitle="Card subtitle" />
-                <CardText>
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                  Donec mattis pretium massa. Aliquam erat volutpat. Nulla facilisi.
-                  Donec vulputate interdum sollicitudin. Nunc lacinia auctor quam sed pellentesque.
-                  Aliquam dui mauris, mattis quis lacus id, pellentesque lobortis odio.
-                </CardText>
-                <CardActions>
-                  <FlatButton label="Action1" />
-                  <FlatButton label="Action2" />
-                </CardActions>
+
               </Card>
             </div>
           </Tab>
