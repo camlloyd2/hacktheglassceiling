@@ -14,7 +14,11 @@ import womenTech from './womenintech.jpg';
 import womenIntern from './womenIntern.jpg';
 import miscTech from './miscData.jpg';
 import ted from './ted.jpg';
+
 import book from './bookCard.jpeg';
+
+import grace from './grace.jpg';
+
 import {ThemeProvider} from 'styled-components';
 import {
   Card,
@@ -125,11 +129,6 @@ class App extends Component {
                     Here are some companies that offer great experience while getting your degree!
                     <p>
                       <Linkify>
-                        http://rewritingthecode.org - This orginization was created to connect students like you to companies that have the same interests.
-                      </Linkify>
-                    </p>
-                    <p>
-                      <Linkify>
                         https://girlswhocode.com/ - This website provides links to summer internships, after school coding programs for girls in grades 6-12, and 2 week beginner and intermediate coding bootcamps for girls in college!
                       </Linkify>
                     </p>
@@ -188,7 +187,24 @@ class App extends Component {
                     </p>
                     <h2>College Grad Opportunities</h2>
                     <p>
-                      <Linkify>This is a placeholder.</Linkify>
+                      <Linkify>
+                        https://careers.jpmorgan.com/careers/US/en/programs?type=Full-Time - JP Morgan Chase & Co Post Graduate Opportunities
+                      </Linkify>
+                    </p>
+                    <p>
+                      <Linkify>
+                        https://careers.blizzard.com/en-us/openings/all/all/all/new-grad-roles/1 - Blizzard Entertainment Post Graduate Opportunities
+                      </Linkify>
+                    </p>
+                    <p>
+                      <Linkify>
+                        https://www.redhat.com/en/jobs/categories/technology - RedHat Post Graduate Opportunities
+                      </Linkify>
+                    </p>
+                    <p>
+                      <Linkify>
+                        http://rewritingthecode.org - This organization was created to connect students like you to companies that have the same interests.
+                      </Linkify>
                     </p>
                   </CardText>
 
@@ -220,19 +236,38 @@ class App extends Component {
               <div style={{width: '28%'}}>
                 <Card style={{padding: 20}}>
                   <CardMedia>
-                    <img src={miscTech} alt="" />
+                    <img src={grace} alt="" />
                   </CardMedia>
                   <CardTitle
-                    title="Miscellaneous"
-                    subtitle="Various resources to help hack the glass ceiling!"
+                    title="Important Women in STEM History"
+                    subtitle="Women Who Pathed the Way"
                   />
                   <CardText>
-                    This is a placeholder.
-                    <h2>Placeholder</h2>
+                    <h2>
+                      Ada Lovelace - 1815-1852; The Prophet of the Computer Age
+                    </h2>
                     <p>
-                      <Linkify>This is a placeholder.</Linkify>
+                      <Linkify>
+                        Ada is considered to be the first computer programmer. She translated and extended onto article on Babbage's analytical engine that was published in 1843, however its significance was not recognized until after her death.
+                        {' '}
+                      </Linkify>
                     </p>
-                    <h2>College Grad Opportunities</h2>
+                    <h2>
+                      Rear Admiral Grace Hopper - 1906-1992 (Pictured Above)
+                    </h2>
+                    <p>
+                      <Linkify>
+                        Grace created the first compiler for computer languages, which renders worded instructions into code that can be read by computers. She joined the US Navy in 1943, joined the reserves after WWII, retired in 1966, and then returned in 1967 and served another 19 years before officially retiring in 1986. Grace was awarded the National Medal of Technology in 1991—becoming the first female individual recipient of the honor.
+                      </Linkify>
+                    </p>
+                    <h2>
+                      Katherine Johnson, Dorothy Vaughan, and Mary Jackson
+                    </h2>
+                    <p>
+                      <Linkify>
+                        Katherine, Dorothy, and Mary were all involved in John Glenn's trip around the globe in 1962. Katherine calculated the trajectories needed for a save takeoff and splashdown for the trip. Dorothy became the National Advisory Committee for Aeronautics's first black computing supervisor as well as their first expert FORTAN programmer. Mary was original assisting Kazimierz Czarnecki in aeronautic research engineering before petitioning & winning the right to take engineering courses at Hampton High School, which was at the time segregated. She then became NASA's first female African-American engineer.
+                      </Linkify>
+                    </p>
                   </CardText>
 
                 </Card>
