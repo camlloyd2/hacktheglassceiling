@@ -14,7 +14,7 @@ class App extends Component {
         <div style={{backgroundImage: 'url(' + background + ')'}}>
           <header className="App-header">
 
-            <h1 style={{fontSize: 32}}>Hack the Glass Ceiling!</h1>
+            <h1 style={{fontSize: 50}}>Hacking the Glass Ceiling!</h1>
 
           </header>
         </div>
@@ -48,12 +48,34 @@ class App extends Component {
               style={{
                 margin: 60,
                 display: 'flex',
+                justifyContent: 'space-evenly',
 
                 flexGrow: 1,
               }}
             >
               <ChatBot recognitionEnable={true} steps={steps} />
-              <p> Did you know? blah blah blah </p>
+             
+                <div>
+                  <h1> Don't Say This: </h1>
+                      <p>I can't afford to live in _______. (Your boss doesn't care) 
+                        </p>
+                      <p> I have student loans. (Ditto)
+                        </p>
+                      <p> I'm getting married. (Nope)
+                        </p>
+                      <p> I'm trying to get pregnant. (NOOOOO!)
+                        </p>
+                      <p> I've been working overtime. (We all work hard.)
+                        </p>
+                      <p> This is what I want and I'll take nothing less. (Negotiation is about compromise.)
+                        </p>
+                      <p> I need _____. (OK, but do you really need it? Try I'd like or I propose)
+                        </p>
+                      <p> I'm sorry, I just want _______. (Do not-- repeat: do not!-- apologize for talking about money)
+                        </p>
+
+                  </div>
+
             </div>
 
           </Tab>
