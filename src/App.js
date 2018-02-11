@@ -176,7 +176,7 @@ class App extends Component {
                   </CardMedia>
                   <CardTitle
                     title="Academics"
-                    subtitle="Internships, Scholarships, and more!"
+                    subtitle="Internships, Scholarships, and More"
                   />
                   <CardText>
                     As an upcoming or current undergraduate in heavily male-dominated fields like Computer Science & Technology, finding scholarships and even the right college for you can be difficult.
@@ -261,7 +261,7 @@ class App extends Component {
                   </CardMedia>
                   <CardTitle
                     title="Professional"
-                    subtitle="Post College Opportunities!"
+                    subtitle="Post College Opportunities"
                   />
                   <CardText>
                     Finding a job straight out of college is difficult, especially in the Computer Science & Technology industries. Here are some tips on how to beef up your LinkedIn profile and companies that are college graduate friendly!
@@ -306,7 +306,7 @@ class App extends Component {
                   </CardMedia>
                   <CardTitle
                     title="TED Talks"
-                    subtitle="Great talks by figures in tech"
+                    subtitle="Great Talks by Figures in Tech"
                   />
                   <CardText>
                     {' '}
@@ -368,7 +368,7 @@ class App extends Component {
                   </CardMedia>
                   <CardTitle
                     title="Top books to read"
-                    subtitle="Engage with iconic books about technology in our world today."
+                    subtitle="Engage with Iconic Books about Technology in Our World Today"
                   />
                   <CardText>
                     <p>
