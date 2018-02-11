@@ -94,18 +94,38 @@ class App extends Component {
                         http://bit.ly/2BR4RyS - This has a list of internships compiled by Carnegie Melon's school of computer science for students.
                       </Linkify>
                     </p>
+                    <p>
+                      <Linkify>https://www.redhat.com/en/jobs/categories/internships - Internships with RedHat.</Linkify>
+                    </p>
+                    <p>
+                      <Linkify>https://careers.jpmorgan.com/careers/US/en/programs - Various college student programs with JP Morgan Chase & Co.</Linkify>
+                    </p>
+                    <p>
+                      <Linkify>https://careers.blizzard.com/en-us/students - Interships, post graduation jobs, and contests hosted by Blizzard Entertainment.</Linkify>
+                    </p>
+                    <p>
+                      <Linkify>http://bit.ly/2EizLlB - BAE Systems Summer Internships</Linkify>
+                    </p>
                     <h2>Colleges</h2>
                     <p>
-                      <Linkify>This is a placeholder.</Linkify>
+                      <Linkify>https://www.computerscienceonline.org - This is a general database of colleges with Computer Science programs.</Linkify>
+                    </p>
+                    <p>
+                      <Linkify>https://www.computerscience.org/degrees/bachelors/ - Another general database that also has available scholarships.</Linkify>
                     </p>
                     <h2>Scholarships</h2>
                     <p>
-
                       <Linkify>
                         http://www.dodstem.us/stem-programs/scholarships - Department of Defense scholarships provide cash awards to students who have demonstrated ability and aptitude for excelling in STEM fields in disciplines of importance to DoD.
                       </Linkify>
-
                     </p>
+                    <p>
+                      <Linkify>http://societyofwomenengineers.swe.org/scholarships - Society of Women Scholarships</Linkify>
+                    </p>
+                    <p>
+                      <Linkify>https://www.womentechmakers.com/scholars - Anita Borg Scholars Program </Linkify>
+                    </p>
+
                   </CardText>
 
                 </Card>
