@@ -11,6 +11,7 @@ import Linkify from 'react-linkify';
 import pearlGirl from './pearlGirl.jpeg';
 import rosietech from './rosietech.jpg';
 import womenTech from './womenintech.jpg';
+import womenIntern from './womenIntern.jpg';
 import miscTech from './miscData.jpg';
 import ted from './ted.jpg';
 import {ThemeProvider} from 'styled-components';
@@ -77,9 +78,50 @@ class App extends Component {
                     subtitle="Internships, Scholarships, and more!"
                   />
                   <CardText>
-                    As an upcoming or current undergraduate in heavily male-dominated fields like Computer Science & Technology, finding internships,scholarships,and even the right college for you can be difficult.
-                    Below are links to great, women influenced & friendly internships, scholarships specifically for women in the STEM field, and colleges that are accredited and some of the best in the nation!
-                    <h2>Internships</h2>
+                    As an upcoming or current undergraduate in heavily male-dominated fields like Computer Science & Technology, finding scholarships and even the right college for you can be difficult.
+                    Below are links to scholarships specifically for women in the STEM field and college repositories!
+                    <h2>Colleges</h2>
+                    <p>
+                      <Linkify>
+                        https://www.computerscienceonline.org - This is a general database of colleges with Computer Science programs.
+                      </Linkify>
+                    </p>
+                    <p>
+                      <Linkify>
+                        https://www.computerscience.org/degrees/bachelors/ - Another general database that also has available scholarships.
+                      </Linkify>
+                    </p>
+                    <h2>Scholarships</h2>
+                    <p>
+                      <Linkify>
+                        http://www.dodstem.us/stem-programs/scholarships - Department of Defense scholarships provide cash awards to students who have demonstrated ability and aptitude for excelling in STEM fields in disciplines of importance to DoD.
+                      </Linkify>
+                    </p>
+                    <p>
+                      <Linkify>
+                        http://societyofwomenengineers.swe.org/scholarships - Society of Women Scholarships
+                      </Linkify>
+                    </p>
+                    <p>
+                      <Linkify>
+                        https://www.womentechmakers.com/scholars - Anita Borg Scholars Program
+                        {' '}
+                      </Linkify>
+                    </p>
+
+                  </CardText>
+
+                </Card>
+                <Card style={{padding: 20, marginTop: 20}}>
+                  <CardMedia>
+                    <img src={womenIntern} alt="" />
+                  </CardMedia>
+                  <CardTitle
+                    title="Internships"
+                    subtitle="Experience Gathering Opportunities"
+                  />
+                  <CardText>
+                    Here are some companies that offer great experience while getting your degree!
                     <p>
                       <Linkify>
                         http://rewritingthecode.org - This orginization was created to connect students like you to companies that have the same interests.
@@ -143,10 +185,10 @@ class App extends Component {
                         {' '}
                       </Linkify>
                     </p>
-
                   </CardText>
 
                 </Card>
+
               </div>
               <div style={{width: '28%'}}>
                 <Card style={{padding: 20}}>
@@ -220,6 +262,7 @@ class App extends Component {
                   </CardText>
 
                 </Card>
+
               </div>
             </div>
           </Tab>
