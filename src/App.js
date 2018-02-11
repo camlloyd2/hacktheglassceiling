@@ -7,6 +7,11 @@ import Slider from 'material-ui/Slider';
 import ChatBot from 'react-simple-chatbot';
 import background from './background.png';
 import brokenglass from './brokenglass.png';
+import homePicture from './homePicture.jpg';
+import info1 from './info1.png';
+import info2 from './info2.png';
+import info3 from './info3.jpg';
+import info4 from './info4.png';
 import Linkify from 'react-linkify';
 import pearlGirl from './pearlGirl.jpeg';
 import rosietech from './rosietech.jpg';
@@ -41,17 +46,108 @@ class App extends Component {
 
         <Tabs>
           <Tab label="Home">
-            <div style={{backgroundImage: 'url(' + brokenglass + ')'}}>
-
-              <div style={{margin: 60}}>
-                <h2>About Hacking the Glass Ceiling</h2>
-                <p />
-                <p>
-                  Empowering women through resources
-                </p>
-
+          <div style = {{display: 'flex', flexDirection: 'row', justifyContent: 'space-evenly', flexWrap: 'wrap', background: '#daebf2'}}>
+            
+            <div style = {{width: '90%', alignSelf: 'center', flexDirection: 'column', padding: 8}}>
+            <Paper style = {{paperStyle, display: 'flex',
+              flexDirection: 'column',
+              alignItems: 'center',
+              flexDirection: 'row'}}>
+              <div style={{alignItem: 'left'}}>
+              <img src={homePicture} style = {{padding: 16}}/>
               </div>
+              <div style={{padding: 40, textAlign: 'center'}}>
+              <h2> About: </h2>
+              <p>
+              The goal of Hacking the Glass Ceiling is to inform and empower women in tech. We want to increase awareness of diversity issues concerning women and minorities in STEM fields, and provide resources to help navigate these issues.  
+              </p>
+              </div>
+            </Paper>
             </div>
+
+            
+            <div style = {{width: '90%', alignSelf: 'center', flexDirection: 'column', padding: 8}}>
+              <Paper style = {{paperStyle, display: 'flex',
+              flexDirection: 'column',
+              alignItems: 'center',
+              flexDirection: 'row'}}>
+              <div style = {{padding: 40, textAlign: 'center'}}>
+              <h2> Did you know? </h2>
+              <p>
+              Women feel like they need to be 100% qualified to apply for a job, while men feel that they need to be 60% qualified to apply.
+              </p>
+              </div>
+              <div>
+              <img src={info1} style = {{width: '95%', height: '90%', padding: 16, alignSelf: 'right'}}/>
+              </div>
+              </Paper>
+              </div>
+             
+            
+              <div style = {{width: '90%', alignSelf: 'center', flexDirection: 'column', padding: 8}}>
+              <Paper style = {{paperStyle, display: 'flex',
+                flexDirection: 'column',
+                alignItems: 'center',
+                flexDirection: 'row'}}>
+                <div style={{alignItem: 'left'}}>
+                <img src={info2} style = {{width: '95%', height: '90%', padding: 16}}/>
+                </div>
+                <div style={{padding: 40, textAlign: 'center'}}>
+                <h2> Did you know? </h2>
+                <p>
+                  One of the the factors that may contribute to the wage gap is that women are less likely to ask for raises and negotiate their salaries. Don’t be afraid to ask! 
+                </p>
+                </div>
+              </Paper>
+              </div>
+
+              <div style = {{width: '90%', alignSelf: 'center', flexDirection: 'column', padding: 8}}>
+              <Paper style = {{paperStyle, display: 'flex',
+              flexDirection: 'column',
+              alignItems: 'center',
+              flexDirection: 'row'}}>
+              <div style = {{padding: 40, textAlign: 'center'}}>
+              <h2> Did you know? </h2>
+              <p>
+              There is a lack of female role models/mentors and many women find themselves having to prove their competence in a work setting.
+              </p>
+              </div>
+              <div>
+              <img src={info3} style = {{width: '95%', height: '90%', padding: 16, alignSelf: 'right'}}/>
+              </div>
+              </Paper>
+              </div>
+
+               <div style = {{width: '90%', alignSelf: 'center', flexDirection: 'column', padding: 8}}>
+              <Paper style = {{paperStyle, display: 'flex',
+                flexDirection: 'column',
+                alignItems: 'center',
+                flexDirection: 'row'}}>
+                <div style={{alignItem: 'left'}}>
+                <img src={info4} style = {{width: '95%', height: '90%', padding: 16}}/>
+                </div>
+                <div style={{padding: 40, textAlign: 'center'}}>
+                <h2> Advice: </h2>
+                <p>
+                Don’t be the default option for “office housework”
+                </p>
+                <p>
+                  Be vocal about other women’s accomplishments. REmind others of their contributions and strengths. 
+                </p>
+                <p>
+                  Don’t let people interrupt you.
+                </p>
+                <p>
+                  Take and accept credit for your work. DON’T minimize your accomplishments. 
+                </p>
+                <p> 
+                  Don’t apologize when you don’t need to. 
+                  </p>
+                </div>
+              </Paper>
+              </div>
+        </div>
+
           </Tab>
           <Tab label="Resources">
             <div style={{margin: 60}}>
@@ -255,4 +351,15 @@ const styles = {
     fontWeight: 400,
   },
 };
+
+const paperStyle = {
+  height: '95%',
+  width: '100%',
+  margin: 0,
+  textAlign: 'center',
+  display: 'inline-block',
+  zDepth : 2,
+  background: '##f9f9f9',
+};
+
 export default App;
