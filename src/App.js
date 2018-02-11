@@ -14,6 +14,7 @@ import womenTech from './womenintech.jpg';
 import womenIntern from './womenIntern.jpg';
 import miscTech from './miscData.jpg';
 import ted from './ted.jpg';
+import book from './bookCard.jpeg';
 import {ThemeProvider} from 'styled-components';
 import {
   Card,
@@ -157,34 +158,7 @@ class App extends Component {
                         http://bit.ly/2EizLlB - BAE Systems Summer Internships
                       </Linkify>
                     </p>
-                    <h2>Colleges</h2>
-                    <p>
-                      <Linkify>
-                        https://www.computerscienceonline.org - This is a general database of colleges with Computer Science programs.
-                      </Linkify>
-                    </p>
-                    <p>
-                      <Linkify>
-                        https://www.computerscience.org/degrees/bachelors/ - Another general database that also has available scholarships.
-                      </Linkify>
-                    </p>
-                    <h2>Scholarships</h2>
-                    <p>
-                      <Linkify>
-                        http://www.dodstem.us/stem-programs/scholarships - Department of Defense scholarships provide cash awards to students who have demonstrated ability and aptitude for excelling in STEM fields in disciplines of importance to DoD.
-                      </Linkify>
-                    </p>
-                    <p>
-                      <Linkify>
-                        http://societyofwomenengineers.swe.org/scholarships - Society of Women Scholarships
-                      </Linkify>
-                    </p>
-                    <p>
-                      <Linkify>
-                        https://www.womentechmakers.com/scholars - Anita Borg Scholars Program
-                        {' '}
-                      </Linkify>
-                    </p>
+
                   </CardText>
 
                 </Card>
@@ -262,7 +236,32 @@ class App extends Component {
                   </CardText>
 
                 </Card>
-
+                <Card style={{padding: 20, marginTop: 20}}>
+                  <CardMedia>
+                    <img src={book} alt="" />
+                  </CardMedia>
+                  <CardTitle
+                    title="Top books to read"
+                    subtitle="Engage with iconic books about technology in our world today."
+                  />
+                  <CardText>
+                    <p>
+                      <Linkify>
+                        http://amzn.to/2lInJ78 - Feminist Fight Club: An Office Survival Manual for a Sexist Workplace by Jessica Bennett
+                      </Linkify>
+                    </p>
+                    <p>
+                      <Linkify>
+                        http://amzn.to/2sqOYJM - Lean In: Women, Work, and the Will to Lead by Sheryl Sandberg
+                      </Linkify>
+                    </p>
+                    <p>
+                      <Linkify>
+                        http://amzn.to/2BRswz5 - The Design of Everyday Things by Don Norman
+                      </Linkify>
+                    </p>
+                  </CardText>
+                </Card>
               </div>
             </div>
           </Tab>
@@ -274,7 +273,7 @@ class App extends Component {
                 alignItems: 'center',
               }}
             >
-              <h2>
+              <h2 style={{padding: 10}}>
                 {' '}
                 Use this chat bot to help you practice what to say in scenarios associated with gender bias.
               </h2>
@@ -288,36 +287,37 @@ class App extends Component {
               }}
             >
               <div>
-                <h3> Don't Say This When Discussing Your Salary: </h3>
-                <p>
-                  I can't afford to live in _______. (Your boss doesn't care)
-                  {' '}
-                </p>
-                <p>
-                  {' '}I have student loans. (Ditto)
-                </p>
-                <p>
-                  {' '}I'm getting married. (Nope)
-                </p>
-                <p>
-                  {' '}I'm trying to get pregnant. (NOOOOO!)
-                </p>
-                <p>
-                  {' '}I've been working overtime. (We all work hard.)
-                </p>
-                <p>
-                  {' '}
-                  This is what I want and I'll take nothing less. (Negotiation is about compromise.)
-                </p>
-                <p>
-                  {' '}
-                  I need _____. (OK, but do you really need it? Try I'd like or I propose)
-                </p>
-                <p>
-                  {' '}
-                  I'm sorry, I just want _______. (Do not-- repeat: do not!-- apologize for talking about money)
-                </p>
-
+                <Paper style={{padding: 20}}>
+                  <h3> Don't Say This When Discussing Your Salary: </h3>
+                  <p>
+                    I can't afford to live in _______. (Your boss doesn't care)
+                    {' '}
+                  </p>
+                  <p>
+                    {' '}I have student loans. (Ditto)
+                  </p>
+                  <p>
+                    {' '}I'm getting married. (Nope)
+                  </p>
+                  <p>
+                    {' '}I'm trying to get pregnant. (NOOOOO!)
+                  </p>
+                  <p>
+                    {' '}I've been working overtime. (We all work hard.)
+                  </p>
+                  <p>
+                    {' '}
+                    This is what I want and I'll take nothing less. (Negotiation is about compromise.)
+                  </p>
+                  <p>
+                    {' '}
+                    I need _____. (OK, but do you really need it? Try I'd like or I propose)
+                  </p>
+                  <p>
+                    {' '}
+                    I'm sorry, I just want _______. (Do not-- repeat: do not!-- apologize for talking about money)
+                  </p>
+                </Paper>
               </div>
               <Paper>
                 <ThemeProvider theme={theme}>
