@@ -12,6 +12,7 @@ import pearlGirl from './pearlGirl.jpeg';
 import rosietech from './rosietech.jpg';
 import womenTech from './womenintech.jpg';
 import miscTech from './miscData.jpg';
+import ted from './ted.jpg';
 import {ThemeProvider} from 'styled-components';
 import {
   Card,
@@ -95,23 +96,35 @@ class App extends Component {
                       </Linkify>
                     </p>
                     <p>
-                      <Linkify>https://www.redhat.com/en/jobs/categories/internships - Internships with RedHat.</Linkify>
+                      <Linkify>
+                        https://www.redhat.com/en/jobs/categories/internships - Internships with RedHat.
+                      </Linkify>
                     </p>
                     <p>
-                      <Linkify>https://careers.jpmorgan.com/careers/US/en/programs - Various college student programs with JP Morgan Chase & Co.</Linkify>
+                      <Linkify>
+                        https://careers.jpmorgan.com/careers/US/en/programs - Various college student programs with JP Morgan Chase & Co.
+                      </Linkify>
                     </p>
                     <p>
-                      <Linkify>https://careers.blizzard.com/en-us/students - Interships, post graduation jobs, and contests hosted by Blizzard Entertainment.</Linkify>
+                      <Linkify>
+                        https://careers.blizzard.com/en-us/students - Interships, post graduation jobs, and contests hosted by Blizzard Entertainment.
+                      </Linkify>
                     </p>
                     <p>
-                      <Linkify>http://bit.ly/2EizLlB - BAE Systems Summer Internships</Linkify>
+                      <Linkify>
+                        http://bit.ly/2EizLlB - BAE Systems Summer Internships
+                      </Linkify>
                     </p>
                     <h2>Colleges</h2>
                     <p>
-                      <Linkify>https://www.computerscienceonline.org - This is a general database of colleges with Computer Science programs.</Linkify>
+                      <Linkify>
+                        https://www.computerscienceonline.org - This is a general database of colleges with Computer Science programs.
+                      </Linkify>
                     </p>
                     <p>
-                      <Linkify>https://www.computerscience.org/degrees/bachelors/ - Another general database that also has available scholarships.</Linkify>
+                      <Linkify>
+                        https://www.computerscience.org/degrees/bachelors/ - Another general database that also has available scholarships.
+                      </Linkify>
                     </p>
                     <h2>Scholarships</h2>
                     <p>
@@ -120,10 +133,15 @@ class App extends Component {
                       </Linkify>
                     </p>
                     <p>
-                      <Linkify>http://societyofwomenengineers.swe.org/scholarships - Society of Women Scholarships</Linkify>
+                      <Linkify>
+                        http://societyofwomenengineers.swe.org/scholarships - Society of Women Scholarships
+                      </Linkify>
                     </p>
                     <p>
-                      <Linkify>https://www.womentechmakers.com/scholars - Anita Borg Scholars Program </Linkify>
+                      <Linkify>
+                        https://www.womentechmakers.com/scholars - Anita Borg Scholars Program
+                        {' '}
+                      </Linkify>
                     </p>
 
                   </CardText>
@@ -158,6 +176,29 @@ class App extends Component {
                     </p>
                   </CardText>
 
+                </Card>
+                <Card style={{padding: 20, marginTop: 20}}>
+                  <CardMedia>
+                    <img src={ted} alt="" />
+                  </CardMedia>
+                  <CardTitle
+                    title="TED Talks"
+                    subtitle="Great talks by figures in tech"
+                  />
+                  <CardText>
+                    {' '}
+                    Check out these inspirational Ted Talks on a variety of topics and conversations surrounding technology.
+                    <p>
+                      <Linkify>
+                        http://bit.ly/2i1Wrec- Economist Andrew McAfee suggests that, yes, probably, droids will take our jobs -- or at least the kinds of jobs we know now. In this far-seeing talk, he thinks through what future jobs might look like, and how to educate coming generations to hold them.
+                      </Linkify>
+                    </p>
+                    <p>
+                      <Linkify>
+                        http://bit.ly/XXGyrc - In this talk about the future of work, economist David Autor addresses the question of why there are still so many jobs and comes up with a surprising, hopeful answer.
+                      </Linkify>
+                    </p>
+                  </CardText>
                 </Card>
               </div>
               <div style={{width: '28%'}}>
